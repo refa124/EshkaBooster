@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{9333BD5F-3D16-485A-98C3-B9BA2BDF3489}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>EshkaBooster</RootNamespace>
+        <AssemblyName>EshkaBooster</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="0Harmony">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\core\0Harmony.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\Assembly-CSharp.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Assembly-CSharp-firstpass">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\Assembly-CSharp-firstpass.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="BepInEx.Core">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\core\BepInEx.Core.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="BepInEx.Preloader.Core">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\core\BepInEx.Preloader.Core.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="BepInEx.Unity.Common">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\core\BepInEx.Unity.Common.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="BepInEx.Unity.IL2CPP">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\core\BepInEx.Unity.IL2CPP.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Facepunch.System">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\Facepunch.System.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Facepunch.Unity">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\Facepunch.Unity.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Facepunch.UnityEngine">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\Facepunch.UnityEngine.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Il2CppInterop.Common">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\core\Il2CppInterop.Common.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Il2CppInterop.Generator">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\core\Il2CppInterop.Generator.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Il2CppInterop.HarmonySupport">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\core\Il2CppInterop.HarmonySupport.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Il2CppInterop.Runtime">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\core\Il2CppInterop.Runtime.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Il2Cppmscorlib">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Il2CppSystem">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\Il2CppSystem.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Il2CppSystem.Core">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\Il2CppSystem.Core.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Data"/>
+        <Reference Include="System.Xml"/>
+        <Reference Include="UnityEngine">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\UnityEngine.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.IMGUIModule">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\UnityEngine.IMGUIModule.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.InputLegacyModule">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\UnityEngine.InputLegacyModule.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\UnityEngine.TextRenderingModule.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestModule">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\UnityEngine.UnityWebRequestModule.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+          <HintPath>..\..\..\Desktop\MyRustCheatsTest\RustClient_Data\BepInEx\interop\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="EshkaPlugin.cs" />
+        <Compile Include="Globals.cs" />
+        <Compile Include="Logger.cs" />
+        <Compile Include="Manager.cs" />
+        <Compile Include="Patches\OnBootstrapDestroy.cs" />
+        <Compile Include="Patches\OnGrassUpdate.cs" />
+        <Compile Include="Patches\OnShadowsUpdate.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="Utils\Notifier.cs" />
+        <Compile Include="Utils\Render.cs" />
+        <Compile Include="Utils\UI.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
